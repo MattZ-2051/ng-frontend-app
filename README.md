@@ -52,4 +52,5 @@ You can find the Figma design to implement [here](https://www.figma.com/file/NsO
     - Your resume as an attachment
     - Any other relevant information
 3. In the email subject, please write: "Technical Test for Frontend Developer" + your name
+
 # ng-frontend-app
