@@ -8,6 +8,7 @@ export default defineConfig({
     },
 
     component: {
+        specPattern: 'src/**/*.cy.{js,jsx,ts,tsx}',
         devServer: {
             framework: 'next',
             bundler: 'webpack',

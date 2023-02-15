@@ -1,3 +1,5 @@
+import Header from '@/components/Header'
+import Layout from '@/components/Layout'
 import GlobalStyle from '@/styles/GlobalStyles'
 import { darkTheme } from '@/styles/theme'
 import {
@@ -38,7 +40,10 @@ export default function App({ Component, pageProps }: AppProps) {
             <QueryClientProvider client={queryClient}>
                 <ThemeProvider theme={darkTheme}>
                     <GlobalStyle />
-                    <Component {...pageProps} />
+                    <Layout>
+                        <Header />
+                        <Component {...pageProps} />
+                    </Layout>
                 </ThemeProvider>
             </QueryClientProvider>
         </>
