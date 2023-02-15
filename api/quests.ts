@@ -7,3 +7,11 @@ export const getCurrentQuests = async (): Promise<Quest[]> => {
     ).data
     return res
 }
+
+export const getSingleQuest = async (questId: string): Promise<Quest> => {
+    const res: Quest = await (
+        await axios.get(`http://localhost:3000/api/quests/${questId}`)
+    ).data
+
+    return res
+}
