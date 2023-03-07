@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { getCurrentQuests } from '@/api/quests'
 
 export default function Home() {
     return (
@@ -9,7 +10,7 @@ export default function Home() {
             </Head>
 
             <main>
-                <h1>Home testing</h1>
+                <h1>main</h1>
             </main>
         </>
     )
